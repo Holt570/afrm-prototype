@@ -98,6 +98,26 @@ class Fuel_Range_Management
 
         calculated_fuel = (takeoff_climb_fuel + cruise_fuel + descent_landing_fuel) * load_weight_mod;
     }
+
+    public void Output_Result()
+    {
+        double fuel_diff;
+
+        if (planned_fuel > calculated_fuel)
+        {
+            fuel_diff = planned_fuel - calculated_fuel;
+            Console.WriteLine("Planned fuel exceeds calculated fuel by " + fuel_diff + " litres.");
+        }
+        else if (calculated_fuel > planned_fuel)
+        {
+            fuel_diff = calculated_fuel - planned_fuel;
+            Console.WriteLine("Calculated fuel exceeds planned fuel by " + fuel_diff + " litres.");
+        }
+        else
+        {
+            Console.WriteLine("Planned fuel and calculated fuel are equal.");
+        }
+    }
 }
 
 class Program
@@ -111,6 +131,7 @@ class Program
         if (error == "")
         {
             new_flight.Calulate_Fuel();
+            new_flight.Output_Result();
         }
         else
         {
