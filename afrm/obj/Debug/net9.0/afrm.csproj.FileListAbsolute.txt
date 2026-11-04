@@ -1,0 +1,15 @@
+C:\repos\afrm-prototype\afrm\bin\Debug\net9.0\afrm.exe
+C:\repos\afrm-prototype\afrm\bin\Debug\net9.0\afrm.deps.json
+C:\repos\afrm-prototype\afrm\bin\Debug\net9.0\afrm.runtimeconfig.json
+C:\repos\afrm-prototype\afrm\bin\Debug\net9.0\afrm.dll
+C:\repos\afrm-prototype\afrm\bin\Debug\net9.0\afrm.pdb
+C:\repos\afrm-prototype\afrm\obj\Debug\net9.0\afrm.GeneratedMSBuildEditorConfig.editorconfig
+C:\repos\afrm-prototype\afrm\obj\Debug\net9.0\afrm.AssemblyInfoInputs.cache
+C:\repos\afrm-prototype\afrm\obj\Debug\net9.0\afrm.AssemblyInfo.cs
+C:\repos\afrm-prototype\afrm\obj\Debug\net9.0\afrm.csproj.CoreCompileInputs.cache
+C:\repos\afrm-prototype\afrm\obj\Debug\net9.0\afrm.sourcelink.json
+C:\repos\afrm-prototype\afrm\obj\Debug\net9.0\afrm.dll
+C:\repos\afrm-prototype\afrm\obj\Debug\net9.0\refint\afrm.dll
+C:\repos\afrm-prototype\afrm\obj\Debug\net9.0\afrm.pdb
+C:\repos\afrm-prototype\afrm\obj\Debug\net9.0\afrm.genruntimeconfig.cache
+C:\repos\afrm-prototype\afrm\obj\Debug\net9.0\ref\afrm.dll
