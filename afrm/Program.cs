@@ -20,13 +20,14 @@ class Fuel_Range_Management
 
         reader.Read();
 
-        try
+        try //check for invalid input types
         {
             aircraft_type = reader.GetString("aircraft_type");
             planned_fuel = Convert.ToDouble(reader.GetString("planned_fuel"));
             flight_distance = Convert.ToDouble(reader.GetString("flight_distance"));
             load_weight = Convert.ToInt32(reader.GetString("load_weight"));
-        } catch
+        } 
+        catch
         {
             error_message = "ERROR: Invalid Input";
             return error_message;
@@ -50,6 +51,53 @@ class Fuel_Range_Management
 
         return error_message;
     }
+
+    public void Calulate_Fuel()
+    {
+        //initialise fuel values to be calculated
+        int cruise_altitude;
+        double takeoff_climb_fuel;
+        double cruise_fuel;
+        double descent_landing_fuel;
+
+        double load_weight_mod = 1.0 + (load_weight/35000.0); //placeholder value
+
+        //determine cruise altitude based on flight_distance
+        if (flight_distance < 1000)
+        {
+            cruise_altitude = 36000;
+        }
+        else if (flight_distance < 2000)
+        {
+            cruise_altitude = 38000;
+        }
+        else
+        {
+            cruise_altitude = 40000;
+        }
+
+        //cruise altitude modifies fuel numbers in different ways
+        if (cruise_altitude == 36000)
+        {
+            takeoff_climb_fuel = 3000.0; //placeholder
+            cruise_fuel = 6.35 * flight_distance; //placeholder
+            descent_landing_fuel = 1000.0; //placeholder
+        }
+        else if (cruise_altitude == 38000)
+        {
+            takeoff_climb_fuel = 3500.0;
+            cruise_fuel = 6.35 * flight_distance * 0.95;
+            descent_landing_fuel = 1500.0;
+        }
+        else
+        {
+            takeoff_climb_fuel = 4000.0;
+            cruise_fuel = 6.35 * flight_distance * 0.9;
+            descent_landing_fuel = 2000.0;
+        }
+
+        calculated_fuel = (takeoff_climb_fuel + cruise_fuel + descent_landing_fuel) * load_weight_mod;
+    }
 }
 
 class Program
@@ -62,7 +110,7 @@ class Program
 
         if (error == "")
         {
-            
+            new_flight.Calulate_Fuel();
         }
         else
         {
