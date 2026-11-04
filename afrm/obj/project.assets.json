@@ -1,11 +1,51 @@
 {
   "version": 4,
   "targets": {
-    "net10.0": {}
+    "net10.0": {
+      "CsvHelper/2.11.0": {
+        "type": "package",
+        "compile": {
+          "lib/net40-client/CsvHelper.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net40-client/CsvHelper.dll": {
+            "related": ".pdb;.xml"
+          }
+        }
+      }
+    }
   },
-  "libraries": {},
+  "libraries": {
+    "CsvHelper/2.11.0": {
+      "sha512": "mLrJK4Xeg7s7iZ2mN1NB8n8n81kPczYHOCldAyC0m6OteTJgMOdKsCd+rooXuEUzqGq+12JU8qdNAR4uDFXyYQ==",
+      "type": "package",
+      "path": "csvhelper/2.11.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "csvhelper.2.11.0.nupkg.sha512",
+        "csvhelper.nuspec",
+        "lib/net20/CsvHelper.dll",
+        "lib/net20/CsvHelper.pdb",
+        "lib/net20/CsvHelper.xml",
+        "lib/net35-client/CsvHelper.dll",
+        "lib/net35-client/CsvHelper.pdb",
+        "lib/net35-client/CsvHelper.xml",
+        "lib/net40-client/CsvHelper.dll",
+        "lib/net40-client/CsvHelper.pdb",
+        "lib/net40-client/CsvHelper.xml",
+        "lib/portable-sl4+wp71+windows8+net40/CsvHelper.dll",
+        "lib/portable-sl4+wp71+windows8+net40/CsvHelper.pdb",
+        "lib/portable-sl4+wp71+windows8+net40/CsvHelper.xml"
+      ]
+    }
+  },
   "projectFileDependencyGroups": {
-    "net10.0": []
+    "net10.0": [
+      "CsvHelper >= 2.11.0"
+    ]
   },
   "packageFolders": {
     "C:\\Users\\samho\\.nuget\\packages\\": {}
@@ -51,6 +91,12 @@
       "net10.0": {
         "framework": "net10.0",
         "targetAlias": "net10.0",
+        "dependencies": {
+          "CsvHelper": {
+            "target": "Package",
+            "version": "[2.11.0, )"
+          }
+        },
         "imports": [
           "net461",
           "net462",
@@ -344,5 +390,17 @@
         }
       }
     }
-  }
+  },
+  "logs": [
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Package 'CsvHelper 2.11.0' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' instead of the project target framework 'net10.0'. This package may not be fully compatible with your project.",
+      "libraryId": "CsvHelper",
+      "targetGraphs": [
+        "net10.0"
+      ]
+    }
+  ]
 }

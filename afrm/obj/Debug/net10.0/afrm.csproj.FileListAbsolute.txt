@@ -1,0 +1,5 @@
+C:\repos\afrm-prototype\afrm\obj\Debug\net10.0\afrm.GeneratedMSBuildEditorConfig.editorconfig
+C:\repos\afrm-prototype\afrm\obj\Debug\net10.0\afrm.AssemblyInfoInputs.cache
+C:\repos\afrm-prototype\afrm\obj\Debug\net10.0\afrm.AssemblyInfo.cs
+C:\repos\afrm-prototype\afrm\obj\Debug\net10.0\afrm.csproj.CoreCompileInputs.cache
+C:\repos\afrm-prototype\afrm\obj\Debug\net10.0\afrm.sourcelink.json
