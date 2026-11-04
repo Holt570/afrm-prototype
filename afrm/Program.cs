@@ -105,12 +105,12 @@ class Fuel_Range_Management
 
         if (planned_fuel > calculated_fuel)
         {
-            fuel_diff = Math.Round(planned_fuel - calculated_fuel, 5);
+            fuel_diff = Math.Round(planned_fuel - calculated_fuel, 2);
             Console.WriteLine("Planned fuel exceeds calculated fuel by " + fuel_diff + " litres.");
         }
         else if (calculated_fuel > planned_fuel)
         {
-            fuel_diff = Math.Round(calculated_fuel - planned_fuel, 5);
+            fuel_diff = Math.Round(calculated_fuel - planned_fuel, 2);
             Console.WriteLine("Calculated fuel exceeds planned fuel by " + fuel_diff + " litres.");
         }
         else
