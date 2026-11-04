@@ -122,7 +122,6 @@ class Fuel_Range_Management
 
 class Program
 {
-    // path to flight data file
     static void Main()
     {
         Fuel_Range_Management new_flight = new Fuel_Range_Management();
