@@ -48,7 +48,7 @@
           "dependencies": {
             "CsvHelper": {
               "target": "Package",
-              "version": "[2.11.0, )"
+              "version": "[34.0.0, )"
             }
           },
           "imports": [

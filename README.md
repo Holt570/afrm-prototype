@@ -11,4 +11,4 @@ GitHub Repositories - v0.65.0
 Remote Repositories - v0.42.0
 
 Packages required:
-CsvHelper v2.11.0
+CsvHelper v34.0.0
